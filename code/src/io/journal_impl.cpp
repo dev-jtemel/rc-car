@@ -64,6 +64,7 @@ uint64_t journal::now() {
 
 std::string journal::severity_to_str(severity slvl) {
   switch(slvl) {
+    case trace: return "[trace]";
     case debug: return "[debug]";
     case info:  return "[ info]";
     case warn:  return "[ warn]";
@@ -74,6 +75,7 @@ std::string journal::severity_to_str(severity slvl) {
 
 journal::colors journal::severity_to_color(severity slvl) {
   switch(slvl) {
+    case trace: return c_trace;
     case debug: return c_debug;
     case info:  return c_info;
     case warn:  return c_warn;
