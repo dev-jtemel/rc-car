@@ -36,7 +36,8 @@ class journal {
    * The possible severities to log to.
    */
   enum severity {
-    debug = 0,
+    trace = 0,
+    debug,
     info,
     warn,
     error,
@@ -49,6 +50,7 @@ class journal {
    */
   enum colors {
     c_default = 0,
+    c_trace = 240,
     c_debug = 247,
     c_info = 15,
     c_warn = 226,
